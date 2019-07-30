@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  urlBackend: 'https://acme/api'
+  urlBackend: 'https://acme-qa/api'
 };

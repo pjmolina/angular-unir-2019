@@ -18,6 +18,10 @@
   </li>
 </ul>
 
-<app-user-profile></app-user-profile>
+<app-user-profile name="Ramiro" 
+                  role="Operador"
+                  (logout)="onLogout($event)"
+                  >
+</app-user-profile>
 
 <router-outlet></router-outlet>

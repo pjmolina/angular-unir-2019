@@ -9,6 +9,9 @@ import { TimeInfo } from './user-profile/user-profile.component';
 export class AppComponent {
   title = 'Unir 0';
 
+  user = 'Ramon';
+  role = 'Gerente';
+
   onLogout(eventInfo: TimeInfo): void  {
     console.log('El usuario', eventInfo.name, ' hizo logout ', eventInfo.timestamp);
     if (eventInfo.role) {

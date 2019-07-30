@@ -18,8 +18,8 @@
   </li>
 </ul>
 
-<app-user-profile name="Ramiro" 
-                  role="Operador"
+<app-user-profile [name]="user" 
+                  [role]="role"
                   (logout)="onLogout($event)"
                   >
 </app-user-profile>

@@ -1,4 +1,9 @@
 <div class="user-profile">
     <span class="user">{{ name }}</span>
     ( <span class="role">{{ role }}</span> ) | <a (click)="clickEnLogout()">Logout</a>
+    <ol>
+        <li *ngFor="let pais of paises" (click)="selectCountry(pais)">
+            <span>{{ pais }}</span> <strong *ngIf="paisSeleccionado === pais">(Seleccionado)</strong>
+        </li>
+    </ol>
 </div>

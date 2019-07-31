@@ -6,12 +6,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { CounterComponent } from './counter/counter.component';
+import { LoggerService } from './services/logger.service';
+import { Logger2Service } from './services/logger2.service';
+import { ListCityComponent } from './list-city/list-city.component';
+import { CityComponent } from './city/city.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
-    CounterComponent
+    CounterComponent,
+    ListCityComponent,
+    CityComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,10 @@ import { CounterComponent } from './counter/counter.component';
     AppComponent,
     UserProfileComponent
   ],
-  providers: [],
+  providers: [
+    LoggerService
+    // { provide: LoggerService, useClass: Logger2Service }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

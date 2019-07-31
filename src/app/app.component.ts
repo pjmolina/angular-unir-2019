@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { TimeInfo } from './user-profile/user-profile.component';
+import { LoggerService } from './services/logger.service';
+import { Logger2Service } from './services/logger2.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [
+    // LoggerService   //   LoggerService  --->  LoggerService
+    { provide: LoggerService, useClass: Logger2Service }  //   LoggerService  --->  Logger2Service
+  ]
 })
 export class AppComponent implements OnInit {
   title = 'Unir 0';
@@ -15,14 +21,18 @@ export class AppComponent implements OnInit {
   user = 'Ramon';
   role = 'Gerente';
 
+
+  constructor(private logger: LoggerService) {
+  }
+
   ngOnInit() {
     this.calcularSuma();
   }
 
   onLogout(eventInfo: TimeInfo): void  {
-    console.log('El usuario', eventInfo.name, ' hizo logout ', eventInfo.timestamp);
+    this.logger.log('El usuario' + eventInfo.name + ' hizo logout ' + eventInfo.timestamp);
     if (eventInfo.role) {
-      console.log('Rol:', eventInfo.role);
+      this.logger.log('Rol:' + eventInfo.role);
     }
   }
 

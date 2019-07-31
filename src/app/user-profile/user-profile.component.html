@@ -6,5 +6,13 @@
             <span>{{ pais }}</span> <strong *ngIf="paisSeleccionado === pais">(Seleccionado)</strong>
         </li>
     </ol>
-    <input type="text" [(ngModel)]="name">
+    Caja de edicion 1: <input type="text" [(ngModel)]="name"> <br/>
+    <!-- Caja de edicion 2: <input type="text" [(ngModel)]="name"> <br/>
+    Caja de edicion 3: <input type="text" [(ngModel)]="name"> <br/> -->
+
+    Año:  <input type="text" min="1900" max="2100" [(ngModel)]="anyoInput">
+
+    {{ anyo }}  Año siguiente:     {{ anyo +1  }}
+
+    
 </div>

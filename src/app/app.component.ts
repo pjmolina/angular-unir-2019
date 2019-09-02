@@ -18,6 +18,10 @@ export class AppComponent implements OnInit {
   valor1 = 5;
   valor2 = 7;
 
+  m1 = 2.71;
+  m2 = 1.16;
+  m3 = 42.0;
+
   user = 'Ramon';
   role = 'Gerente';
 

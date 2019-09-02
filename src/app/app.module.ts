@@ -10,6 +10,10 @@ import { LoggerService } from './services/logger.service';
 import { Logger2Service } from './services/logger2.service';
 import { ListCityComponent } from './list-city/list-city.component';
 import { CityComponent } from './city/city.component';
+import { CurrencyPipe } from './pipes/currency.pipe';
+import { StartWithPipe } from './pipes/start-with.pipe';
+import { ResaltaDirective } from './directives/resalta.directive';
+import { UnlessDirective } from './directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { CityComponent } from './city/city.component';
     UserProfileComponent,
     CounterComponent,
     ListCityComponent,
-    CityComponent
+    CityComponent,
+    CurrencyPipe,
+    StartWithPipe,
+    ResaltaDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

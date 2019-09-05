@@ -1,0 +1,9 @@
+<div>
+    <h2>Detalle de un lugar</h2>
+    <app-place *ngIf="place" [place]="place"></app-place>
+    <div *ngIf="error" class="error">
+        {{ error }}
+    </div>
+    <button (click)="back()">Volver</button>
+</div>
+

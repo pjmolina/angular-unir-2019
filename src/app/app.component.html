@@ -5,37 +5,18 @@
   </h1>
 </div>  
 
-<app-user-profile [name]="user" 
-                  [role]="role"
-                  (logout)="onLogout($event)"
-                  >
-</app-user-profile>
-
-<h2>Counter Sample</h2>
-<app-counter [(value)]="valor1" (valueChange)="valorCambio1($event)"></app-counter>
-<app-counter [(value)]="valor2" (valueChange)="valorCambio2($event)"></app-counter>
-
-<span appResalta>Valor 1:{{ valor1 }} </span>
-<span>Valor 2:{{ valor2 }} </span>
-<span>Suma:{{ suma }} === {{ valor1 + valor2 }} </span>
-
+<nav>
+  <a routerLink="/page1"  routerLinkActive="active">Pagina 1</a> |
+  <a routerLink="/page2"  routerLinkActive="active">Ciudades</a> |
+  <a routerLink="/page3"  routerLinkActive="active">Lugares</a> |
+  <a routerLink="/places/58be9f37b9d03e04005ee24a"  routerLinkActive="active">Giralda</a> |
+  <a routerLink="/page88"  routerLinkActive="active">Error 404</a>
+</nav>
 
 <hr/>
-Pipes y monedas:
-<ul>
-  <li>{{ m1 | currency:'EUR' }}</li>
-  <li>{{ m2 | currency     }}</li>
-  <li>{{ m3 | currency:'USD' }}</li>
-  <li>{{ 3.14 | currency:'USD' }}</li>
-</ul>
-
-<p> Se evaluo a falso la condición.</p>
-
+  <router-outlet></router-outlet>
 <hr/>
-<app-list-city></app-list-city>
 
-<hr/>
-<h1>Lista de lugares</h1>
-<app-place-list></app-place-list>
-
-<router-outlet></router-outlet>
+<footer>
+  &copy; 2019, UNIR.
+</footer>

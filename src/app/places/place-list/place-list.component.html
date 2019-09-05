@@ -1,7 +1,8 @@
 <div class="places">
     <ol>
         <li *ngFor="let p1 of places">
-            <app-place [place]=p1></app-place>
+            <app-place [place]=p1></app-place> 
+            <button [routerLink]="['/places', p1._id ]" >Ver Detalle</button>
         </li>
     </ol>
     <div class="error" *ngIf="error">

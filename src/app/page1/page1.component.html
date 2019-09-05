@@ -1,0 +1,28 @@
+
+
+<h2>Counter Sample</h2>
+<app-counter [(value)]="valor1" (valueChange)="valorCambio1($event)"></app-counter>
+<app-counter [(value)]="valor2" (valueChange)="valorCambio2($event)"></app-counter>
+
+<span appResalta>Valor 1:{{ valor1 }} </span>
+<span>Valor 2:{{ valor2 }} </span>
+<span>Suma:{{ suma }} === {{ valor1 + valor2 }} </span>
+
+
+<hr />
+
+
+Pipes y monedas:
+<ul>
+  <li>{{ m1 | currency:'EUR' }}</li>
+  <li>{{ m2 | currency     }}</li>
+  <li>{{ m3 | currency:'USD' }}</li>
+  <li>{{ 3.14 | currency:'USD' }}</li>
+</ul>
+
+<p> Se evaluo a falso la condición.</p>
+
+
+
+<app-user-profile [name]="user" [role]="role" (logout)="onLogout($event)">
+</app-user-profile>

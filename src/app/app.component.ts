@@ -33,12 +33,6 @@ export class AppComponent implements OnInit {
     this.calcularSuma();
   }
 
-  onLogout(eventInfo: TimeInfo): void  {
-    this.logger.log('El usuario' + eventInfo.name + ' hizo logout ' + eventInfo.timestamp);
-    if (eventInfo.role) {
-      this.logger.log('Rol:' + eventInfo.role);
-    }
-  }
 
   valorCambio1(value: number): void {
     // this.valor1 = value;

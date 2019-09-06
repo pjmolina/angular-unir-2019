@@ -1,5 +1,6 @@
 <div>
     <h3>Listado de ciudades</h3>
     <input [(ngModel)]="searchFilter" placeholder="type to filter">
+    <app-spinner *ngIf="!cities"></app-spinner>
     <app-city *ngFor="let city of cities | startWith:searchFilter" [city]="city"></app-city>
 </div>

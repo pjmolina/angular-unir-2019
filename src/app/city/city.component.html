@@ -1,4 +1,11 @@
 <div class="city">
     <span>{{ city.name }}</span> <span>( {{ city.country }} )</span>
     <strong>{{ temperature }} </strong> ºC
+
+    <button (click)="up()">+</button>
+    <button (click)="down()">-</button>
+
+    <div class="feedback" [@temperatureAnimation]="state">
+            {{ temperature }}
+    </div>
 </div>

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { Routing } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import { ErrorComponent } from './error/error.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { PlaceDetailComponent } from './places/place-detail/place-detail.component';
 import { CheckoutModule } from './checkout/checkout.module';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { CheckoutModule } from './checkout/checkout.module';
     Page3Component,
     ErrorComponent,
     WelcomeComponent,
-    PlaceDetailComponent
+    PlaceDetailComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { CheckoutModule } from './checkout/checkout.module';
     FormsModule,
     HttpClientModule,
     RouterModule,
-    Routing
+    Routing,
+    BrowserAnimationsModule
   ],
   exports: [
     AppComponent,

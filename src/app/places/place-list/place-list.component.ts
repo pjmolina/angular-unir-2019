@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./place-list.component.scss']
 })
 export class PlaceListComponent implements OnInit, OnDestroy {
-  places: Place[] = [];
+  places: Place[] = null;
   error: string = null;
 
   private sub: Subscription;

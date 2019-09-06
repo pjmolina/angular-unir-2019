@@ -1,4 +1,5 @@
 <div class="places">
+    <app-spinner *ngIf="!places"></app-spinner>
     <ol>
         <li *ngFor="let p1 of places">
             <app-place [place]=p1></app-place> 

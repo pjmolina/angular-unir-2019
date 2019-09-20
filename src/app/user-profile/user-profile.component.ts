@@ -19,7 +19,7 @@ export class UserProfileComponent implements OnInit {
   @Output() logout = new EventEmitter<TimeInfo>();
   @Output() countrySelected = new EventEmitter<string>();
 
-  anyo: number = 0;
+  anyo = 0;
 
   set anyoInput(valor: string) {
     if (!valor) {

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="2925440835706374985" desc="title"><source>src/app/app.component.html:3,5</source>
+    Bienvenidos <ph name="INTERPOLATION"><ex>{{ title }}</ex>{{ title }}</ph>!
+  </msg>
+  <msg id="2184955182804507521" desc="page1"><source>src/app/app.component.html:9</source>Pagina 1</msg>
+  <msg id="9074744283848782626" desc="cities"><source>src/app/app.component.html:10</source>Ciudades</msg>
+  <msg id="994532614751508245" desc="places"><source>src/app/app.component.html:11</source>Lugares</msg>
+  <msg id="1541023310972113430" desc="footer"><source>src/app/app.component.html:20,22</source>
+  © 2019, UNIR.
+</msg>
+  <msg id="983519587781663433" desc="welcome-text"><source>src/app/welcome/welcome.component.html:1</source>Bienvenido</msg>
+  <msg id="7961495017129937451" desc="gotoCheckout"><source>src/app/welcome/welcome.component.html:3</source>Ir al carrito</msg>
+</messagebundle>

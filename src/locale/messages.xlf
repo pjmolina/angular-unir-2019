@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es-ES" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="a71b816e0fca396f583364ca50137fef8fdd0471" datatype="html">
+        <source>
+        Bienvenidos <x id="INTERPOLATION" equiv-text="{{ title }}"/>!
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">title</note>
+      </trans-unit>
+      <trans-unit id="1c27566f00463aa3e6e44c624d940b63659dacfb" datatype="html">
+        <source>Pagina 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">page1</note>
+      </trans-unit>
+      <trans-unit id="e8af66ab7126a77410b6e8b2bfab6f86590867b3" datatype="html">
+        <source>Ciudades</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">cities</note>
+      </trans-unit>
+      <trans-unit id="eef34ebe94619e8decfae1ddeb24fed0f2828703" datatype="html">
+        <source>Lugares</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">places</note>
+      </trans-unit>
+      <trans-unit id="3759e122903994aa2515aad7223172c6deeee35e" datatype="html">
+        <source>
+  © 2019, UNIR.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">footer</note>
+      </trans-unit>
+      <trans-unit id="d736fb7085590c5ec6408bf12d5afde7388a81ee" datatype="html">
+        <source>Bienvenido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">welcome-text</note>
+      </trans-unit>
+      <trans-unit id="bfef4d7635ec8651ba2e2358ec6ed1076d24a367" datatype="html">
+        <source>Ir al carrito</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/welcome/welcome.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">gotoCheckout</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

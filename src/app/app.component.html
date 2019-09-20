@@ -1,14 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1 appResalta>
+  <h1 appResalta i18n="title">
     Bienvenidos {{ title }}!
   </h1>
 </div>  
 
 <nav>
-  <a routerLink="/page1"  routerLinkActive="active">Pagina 1</a> |
-  <a routerLink="/page2" routerLinkActive="active">Ciudades</a> |
-  <a routerLink="/page3"  routerLinkActive="active">Lugares</a> |
+  <a routerLink="/page1" i18n="page1" routerLinkActive="active">Pagina 1</a> |
+  <a routerLink="/page2" i18n="cities" routerLinkActive="active">Ciudades</a> |
+  <a routerLink="/page3" i18n="places" routerLinkActive="active">Lugares</a> |
   <a routerLink="/places/58be9f37b9d03e04005ee24a"  routerLinkActive="active">Giralda</a> |
   <a routerLink="/page88"  routerLinkActive="active">Error 404</a>
 </nav>
@@ -17,6 +17,14 @@
   <router-outlet></router-outlet>
 <hr/>
 
-<footer>
+<span i18n="update">Actualizado {minutes, plural, 
+  =0 {ahora mismo}
+  =1 {hace un minuto} 
+  other {hace {{minutes}} minutos} 
+}</span>
+
+<footer i18n="footer">
   &copy; 2019, UNIR.
+
+    
 </footer>

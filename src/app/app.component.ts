@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
   user = 'Ramon';
   role = 'Gerente';
 
+  minutes = 5;
 
   constructor(private logger: LoggerService) {
   }
@@ -45,4 +46,5 @@ export class AppComponent implements OnInit {
   calcularSuma() {
     this.suma = this.valor1 + this.valor2;
   }
+
 }
